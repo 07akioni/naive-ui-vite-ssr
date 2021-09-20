@@ -6,7 +6,7 @@ import App from './App.vue'
 /**
  * Render page with naive ui
  */
-export const render =async () => {
+export const render = async () => {
   const app = createSSRApp(App)
   const { collect } = setup(app)
   const appHtml = await renderToString(app)
